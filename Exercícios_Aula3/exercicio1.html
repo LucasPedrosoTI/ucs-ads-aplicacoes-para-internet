@@ -7,59 +7,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <a href="exercicio1.html">Exercício 1</a>
-        <a href="exercicio2.html">Exercício 2</a>
-        <a href="exercício3.html">Exercício 3</a>
-        <a href="exercício4.html">Exercício 4</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="exercicio1.html">Exercício 1</a>
+            <a href="exercicio2.html">Exercício 2</a>
+            <a href="exercício3.html">Exercício 3</a>
+            <a href="exercício4.html">Exercício 4</a>
+        </nav>
     </header>
     <main>
-        <h1>Dados do Exemplo</h1>
-        <label for="nome">Nome do paciente</label>
-        <input type="text" name="nome" id="nome"><br><br>
-
-        <label for="registro">Registro Hospitalar</label>
-        <input type="text" name="registro" id="registro"><br><br>
-
-        <label for="dataDeInclusao">Data de Inclusã</label>
-        <input type="date" name="dataDeInclusao" id="dataDeInclusao"><br><br>
-
-        <label for="dataDeNasc">Data de Nascimento</label>
-        <input type="date" name="dataDeNasc" id="dataDeNasc"><br><br>
-
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email"><br><br>
-
-        <label for="sexo">Sexo</label><br>
-        <input type="radio" name="sexo" id="feminino">
-        <label for="feminino">Feminino</label>
-
-        <input type="radio" name="sexo" id="masculino">
-        <label for="masculino">Masculino</label><br><br>
-
-        <label for="raca">Raça Declarada</label>
-        <select name="raca" id="raca">
+        <form>
+            <h1>Dados do Exemplo</h1>
+            <div class="form-group">
+                <label for="nome">Nome do paciente</label>
+                <input type="text" name="nome" id="nome"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="registro">Registro Hospitalar</label>
+                <input type="text" name="registro" id="registro"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="dataDeInclusao">Data de Inclusão</label>
+                <input type="date" name="dataDeInclusao" id="dataDeInclusao"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="dataDeNasc">Data de Nascimento</label>
+                <input type="date" name="dataDeNasc" id="dataDeNasc"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email"><br><br>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="sexo">Sexo</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="masculino">
+                    <label for="masculino">Masculino</label><br><br>
+                </div>
+            </div>
+            <div>
+                <label for="raca">Raça Declarada</label>
+                <select name="raca" id="raca">
             <option value="branca">Branca</option>
             <option value="negra">Negra</option>
             <option value="parda">Parda</option>
             <option value="amarela">Amarela</option>
             <option value="indigena">Indígena</option>
             <option value="desc">Desconhecida</option>
-        </select><br><br>
-
-        <label for="como">Como ficou sabendo do estudo?</label><br>
-        <input type="checkbox" name="convidado" id="convidado"><label for="convidado">Convidado</label><br>
-        <input type="checkbox" name="internet" id="internet">
-        <label for="internet">Internet</label><br>
-        <input type="checkbox" name="amigos" id="amigos">
-        <label for="amigos">Amigos</label><br>
-        <input type="checkbox" name="familiares" id="familiares">
-        <label for="familiares">Familiares</label><br>
-        <input type="checkbox" name="outros" id="outros">
-        <label for="outros">Outros</label><br>
+        </select>
+            </div>
+            <div class="checkbox">
+                <label for="como">Como ficou sabendo do estudo?</label><br>
+                <div>
+                    <input type="checkbox" name="convidado" id="convidado">
+                    <label for="convidado">Convidado</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="internet" id="internet">
+                    <label for="internet">Internet</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="amigos" id="amigos">
+                    <label for="amigos">Amigos</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="familiares" id="familiares">
+                    <label for="familiares">Familiares</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="outros" id="outros">
+                    <label for="outros">Outros</label>
+                </div>
+            </div>
+        </form>
     </main>
 </body>
 
